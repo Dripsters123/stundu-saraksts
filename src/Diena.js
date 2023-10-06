@@ -1,8 +1,8 @@
 import Stunda from "./Stunda";
 
 function Diena(props){
- const stundasJSX = props.stundas.map((stunda) => {
-return <Stunda nosaukums= {stunda} />
+ const stundasJSX = props.stundas.map((stunda, indekss) => {
+return <Stunda key={indekss} nosaukums= {stunda} />
  });
     return (
         <>
